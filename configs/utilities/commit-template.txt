@@ -1,0 +1,24 @@
+# <type>(<scope>): <short summary>
+#
+# Provide a more detailed description of the change(s) if necessary.
+# Wrap the body at 72 characters to ensure readability.
+#
+# <type> can be:
+#   feat:     A new feature
+#   fix:      A bug fix
+#   docs:     Documentation changes
+#   style:    Code formatting, missing semi-colons, etc.
+#   refactor: Code refactoring without any functional changes
+#   perf:     Performance improvements
+#   test:     Adding or updating tests
+#   chore:    Changes to the build process or auxiliary tools and libraries
+#
+# <scope> indicates the area of the codebase affected (optional)
+#
+# Examples:
+#   feat(auth): add new OAuth provider
+#   fix(payment): correct calculation of discounts
+#   docs(readme): update with new setup instructions
+#
+# If there is a related issue, link it here.
+# Example: Fixes #123, Closes #456
