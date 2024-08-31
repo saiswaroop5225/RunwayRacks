@@ -3,6 +3,7 @@ package com.eCommerce.RunwayRacks.User.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.Id;
 
 import java.util.Date;
 import java.util.Objects;
@@ -18,7 +19,9 @@ import java.util.Objects;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+
 public class User {
+    @Id
     private Long userId;
     private Date createDate;
     private Date modifiedDate;

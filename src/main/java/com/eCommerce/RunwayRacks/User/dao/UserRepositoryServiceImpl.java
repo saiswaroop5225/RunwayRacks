@@ -111,7 +111,7 @@ public class UserRepositoryServiceImpl implements UserRepository {
         List<User> userList = new ArrayList<>();
         User user = null;
         try {
-            userList = jdbcTemplate.query(UserRepositoryPortletKeys.getGetUserByUserid(), mapper, phoneNumber);
+            userList = jdbcTemplate.query(UserRepositoryPortletKeys.getGetUserByPhoneNumber(), mapper, phoneNumber);
             if (!userList.isEmpty()) {
                 user = userList.getFirst();
             }

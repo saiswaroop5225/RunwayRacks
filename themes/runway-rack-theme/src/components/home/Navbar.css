@@ -1,0 +1,71 @@
+/* Ensure the navbar is fixed at the top and spans full width */
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Make sure it's above other content */
+  }
+  
+  .navbar {
+    width: 100%;
+    background-color: #f8f9fa; /* Adjust the background color as needed */
+    border-bottom: 1px solid #dee2e6; /* Optional: add a border for better visibility */
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .navbar-nav {
+    margin-right: auto;
+  }
+  
+  .navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between icons */
+  }
+  
+  .navbar-icons .nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    color: #343a40; /* Adjust the text color as needed */
+    text-decoration: none;
+  }
+  
+  .navbar-icons .nav-link:hover {
+    color: #007bff; /* Change color on hover */
+  }
+  
+  .icon-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .icon-text span {
+    margin-top: 5px; /* Space between icon and text */
+    font-size: 0.875rem; /* Adjust the text size as needed */
+  }
+  
+  .form-control {
+    border-radius: 0.25rem; /* Adjust if necessary */
+    /* width: 300%; Increase width by 200% */
+    margin-left: -50%; /* Move search bar to the left by 100% to center it */
+    height: calc(2.5rem - 5%); /* Decrease height by 5% */
+    padding: .375rem 8.75rem;/* Increase padding width to 80% of the container width */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    transition: height 0.3s ease; /* Smooth transition for height if needed */
+  }
+  
+  @media (max-width: 1024px) {
+    .form-control {
+      width: 100%; /* Reset width on smaller screens */
+      margin-left: 0; /* Reset margin on smaller screens */
+      padding: 0 20%; /* Adjust padding on smaller screens for better fit */
+    }
+  }
+  
