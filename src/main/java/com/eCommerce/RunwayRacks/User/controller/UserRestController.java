@@ -37,7 +37,7 @@ public class UserRestController {
             String encryptedPassword = bCryptPasswordEncoder.encode(user.getPassword());
             user.setPassword(encryptedPassword);
             // Save user and return success response
-//            User savedUser = userRepository.saveUser(user);
+            User savedUser = userRepository.saveUser(user);
             return new ResponseEntity<>(new ApiResponse<>(true, "User Had been Successfully Created.n Now you can Login using Phone Number or Email Address."), HttpStatus.CREATED);
 
         } catch (Exception e) {

@@ -5,7 +5,7 @@ public class UserRepositoryPortletKeys {
     private static String UPDATE_QUERY_BY_ID = "UPDATE runwayracks.user_ SET modifiedDate=?, password_=?, passwordEncrypted=?, passwordModifiedDate=?, graceLoginCount=?, screenName=?, emailAddress=?, phoneNumber=?, facebookId=?, googleUserId=?, ldapServerId=?, openId=?, portraitId=?, fullName=?, firstName=?, middleName=?, lastName=?, jobTitle=?, loginDate=?, loginIP=?, lastLoginDate=?, lastLoginIP=?, lastFailedLoginDate=?, failedLoginAttempts=?, lockout=?, lockoutDate=?, agreedToTermsOfUse=?, emailAddressVerified=?, status=?, statusValue=?, type_=? WHERE userId=?";
     private static String GET_USER_BY_USERID = "SELECT * FROM runwayracks.user_ WHERE userId=?";
     private static String GET_USER_BY_PHONE_NUMBER = "SELECT * FROM runwayracks.user_ WHERE phoneNumber=?";
-    private static String DELETE_USER_BY_USER_ID =  "UPDATE runwayracks.user_ SET modifiedDate=?,status=1, statusValue='INACTIVE' WHERE userId=?";
+    private static String DELETE_USER_BY_USER_ID =  "UPDATE runwayracks.user_ SET modifiedDate=?,status=0, statusValue='INACTIVE' WHERE userId=?";
     private static String GET_USERS_LIST_BY_STATUS = "SELECT * FROM USER_ WHERE statusValue = ?";
     private static String GET_USERS_LIST = "SELECT * FROM USER_ WHERE statusValue = ?";
 
